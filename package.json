@@ -1,6 +1,7 @@
 {
     "private": true,
     "scripts": {
+        "postinstall": "/usr/bin/env python extract_moment_locales.py",
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -11,10 +12,14 @@
     },
     "devDependencies": {
         "cross-env": "^5.0.0",
+        "flatpickr": "^4.5.7",
         "laravel-mix": "^1.0",
-        "laravel-nova": "^1.0"
+        "laravel-nova": "^1.0",
+        "moment": "^2.24.0",
+        "postcss-discard-comments": "^4.0.2",
+        "vue-template-compiler": "2.6.8"
     },
     "dependencies": {
-        "vue": "^2.5.0"
+        "vue": "2.6.8"
     }
 }

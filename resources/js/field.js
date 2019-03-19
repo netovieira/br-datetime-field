@@ -1,5 +1,5 @@
-Nova.booting((Vue, router, store) => {
-    Vue.component('index-br-datetime-field', require('./components/IndexField'))
-    Vue.component('detail-br-datetime-field', require('./components/DetailField'))
-    Vue.component('form-br-datetime-field', require('./components/FormField'))
+Nova.booting((Vue, router) => {
+    Vue.component('index-intl-date-time', require('./components/Index/DateTimeField'))
+    Vue.component('detail-intl-date-time', require('./components/Detail/DateTimeField'))
+    Vue.component('form-intl-date-time', require('./components/Form/DateTimeField'))
 })
